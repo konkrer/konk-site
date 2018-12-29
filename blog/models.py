@@ -6,3 +6,11 @@ class Blog(models.Model):
 	pub_date = models.DateField()
 	body = models.TextField()
 
+	def summary(self):
+		return self.body[:100]
+
+	def date_pretty(self):
+		return str(self.pub_date) + " in the shit universe"
+
+	def __str__(self):
+		return self.title
