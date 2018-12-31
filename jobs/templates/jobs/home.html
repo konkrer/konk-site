@@ -41,7 +41,7 @@
       <a class="nav-item nav-link active" href="#">Home</a>
       <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
       <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Secrets</a>
+      <a class="nav-item nav-link disabled" href="https://www.victoriassecret.com/" tabindex="-1" aria-disabled="true">Secrets</a>
     </div>
   </div>
 </nav>
@@ -52,12 +52,16 @@
   <section class="jumbotron text-center">
     <div class="container">
       <h1 class="jumbotron-heading">Konkrer</h1>
-      <p class="lead text-muted">Check out some of the things I've created. Some are devices, some are applicatons.</p>
+      <img src="{% static 'Psykl()pz avatar.jpg' %}" height="800"/>
+      <br/>
+      <br/>
+      <p class="lead text">Check out some of the things I've created. Some are devices, some are applicatons.</p>
+      <p class="lead text-muted">But first, some nonsense:</p>
       <p>
         <a href="https://www.wikihow.com/Eat-Noodles" class="btn btn-primary my-2">Eat noodles</a>
         <a href="{% url 'panic' %}" class="btn btn-secondary my-2">Panic</a>
       </p>
-      <img src="{% static 'CAM00050.jpg' %}" height="300"/>
+      
     </div>
   </section>
 
